@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:myproject/Page/Owner/Customer_reserve.dart';
 import 'package:myproject/Page/Wellcom/Register_Page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -15,7 +16,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: const Color.fromARGB(255, 200, 200, 200),
+        color: Color.fromARGB(255, 255, 255, 255),
         child: Center(
           child: Column(
             children: [
@@ -112,11 +113,8 @@ class _LoginState extends State<Login> {
                       backgroundColor:
                           const Color.fromARGB(255, 202, 238, 195)),
                   onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Login(),
-                        ));
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => const Customer_reserve()));
                   },
                   child: const Text(
                     "เข้าสู่ระบบ",

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myproject/Page/Wellcom/wellcom.dart';
+import 'package:myproject/Page/Wellcom/Wellcom.dart';
 
 void main() {
   runApp(const MyApp());
