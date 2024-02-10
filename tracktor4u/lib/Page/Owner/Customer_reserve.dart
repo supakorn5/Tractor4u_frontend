@@ -9,7 +9,15 @@ class Customer_reserve extends StatefulWidget {
 }
 
 class _Customer_reserveState extends State<Customer_reserve> {
-  final List test = ["Supakon", "Phubet", "Jenjira", "Kitipat", "Sorawit"];
+  final List test = [
+    "Supakon",
+    "Phubet",
+    "Jenjira",
+    "Kitipat",
+    "Sorawit",
+    "Kiitti",
+    "Yot"
+  ];
 
   @override
   void setState(VoidCallback fn) {
