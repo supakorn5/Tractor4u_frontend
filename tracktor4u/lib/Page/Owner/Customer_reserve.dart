@@ -15,7 +15,8 @@ class _Customer_reserveState extends State<Customer_reserve> {
     "Jenjira",
     "Kitipat",
     "Sorawit",
-    "Kiitti"
+    "Kiitti",
+    "Yot"
   ];
 
   @override
