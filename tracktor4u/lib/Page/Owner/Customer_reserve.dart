@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myproject/Widget/Card_customer_reservr.dart';
 
 class Customer_reserve extends StatefulWidget {
   const Customer_reserve({super.key});
@@ -8,6 +9,14 @@ class Customer_reserve extends StatefulWidget {
 }
 
 class _Customer_reserveState extends State<Customer_reserve> {
+  final List test = ["Supakon", "Phubet", "Jenjira", "Kitipat", "Sorawit"];
+
+  @override
+  void setState(VoidCallback fn) {
+    // TODO: implement setState
+    super.setState(fn);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +34,19 @@ class _Customer_reserveState extends State<Customer_reserve> {
             ),
             color: Colors.green.shade200, // Adjust the color as needed
           ),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Expanded(
+                child: ListView.builder(
+              itemCount: test.length,
+              itemBuilder: (context, index) {
+                return CardCustomerReserve(name: test[index]);
+              },
+            ))
+          ],
         ),
       ),
     );
