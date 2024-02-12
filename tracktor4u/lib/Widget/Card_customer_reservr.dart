@@ -22,7 +22,9 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
       child: Padding(
         padding: const EdgeInsets.all(14.0),
         child: GestureDetector(
-          onTap: () {},
+          onTap: () {
+            print(name);
+          },
           child: Container(
             width: 300,
             height: 100,
