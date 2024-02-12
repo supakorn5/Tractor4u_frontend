@@ -15,7 +15,7 @@ class _Register_PageState extends State<Register_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: const Color.fromARGB(255, 200, 200, 200),
+        color: const Color.fromARGB(255, 255, 255, 255),
         child: Center(
           child: Column(
             children: [

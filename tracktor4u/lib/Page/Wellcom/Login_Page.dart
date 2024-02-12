@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:myproject/Page/Owner/Customer_reserve.dart';
+import 'package:myproject/Page/Owner/Owner_home.dart';
+import 'package:myproject/Page/Owner/reserve/Customer_reserve.dart';
 import 'package:myproject/Page/Wellcom/Register_Page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -114,7 +115,7 @@ class _LoginState extends State<Login> {
                           const Color.fromARGB(255, 202, 238, 195)),
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => const Customer_reserve()));
+                        builder: (context) => const Owner_home()));
                   },
                   child: const Text(
                     "เข้าสู่ระบบ",
