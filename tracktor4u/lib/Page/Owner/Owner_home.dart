@@ -31,9 +31,9 @@ class _Owner_homeState extends State<Owner_home> {
         child: Page[_currentitem],
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          color: Colors.greenAccent,
-          borderRadius: BorderRadius.only(
+        decoration: BoxDecoration(
+          color: Colors.green.shade200,
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(16.0), // Adjust as needed
             topRight: Radius.circular(16.0), // Adjust as needed
           ),

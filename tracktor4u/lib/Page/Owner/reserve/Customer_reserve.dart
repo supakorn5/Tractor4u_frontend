@@ -23,7 +23,7 @@ class _Customer_reserveState extends State<Customer_reserve> {
       appBar: AppBar(
         title: const Text(
           "รายการลูกค้าที่จองคิว",
-          style: TextStyle(fontFamily: "Mali"),
+          style: TextStyle(fontFamily: "Mali", fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         flexibleSpace: Container(

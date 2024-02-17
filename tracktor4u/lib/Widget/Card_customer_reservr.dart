@@ -1,4 +1,7 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
+import 'package:myproject/Page/Owner/reserve/Customer_information.dart';
 
 class CardCustomerReserve extends StatefulWidget {
   late String name;
@@ -24,6 +27,13 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
         child: GestureDetector(
           onTap: () {
             print(name);
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CustomerInformation(
+                    name: name,
+                  ),
+                ));
           },
           child: Container(
             width: 300,
@@ -49,9 +59,9 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
                   ),
                   Text(
                     "$name",
-                    style: TextStyle(fontFamily: "Itim", fontSize: 20),
+                    style: const TextStyle(fontFamily: "Itim", fontSize: 20),
                   ),
-                  Text(
+                  const Text(
                     "2.8 ก.ม",
                     style: TextStyle(fontFamily: "Itim", fontSize: 20),
                   ),
