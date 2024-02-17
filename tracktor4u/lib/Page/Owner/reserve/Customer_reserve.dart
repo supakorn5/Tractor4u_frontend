@@ -21,6 +21,7 @@ class _Customer_reserveState extends State<Customer_reserve> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: null,
         title: const Text(
           "รายการลูกค้าที่จองคิว",
           style: TextStyle(fontFamily: "Mali", fontWeight: FontWeight.bold),
