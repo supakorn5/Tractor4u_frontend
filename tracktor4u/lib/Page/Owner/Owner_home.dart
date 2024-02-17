@@ -31,11 +31,11 @@ class _Owner_homeState extends State<Owner_home> {
         child: Page[_currentitem],
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          color: Colors.greenAccent,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(12.0), // Adjust as needed
-            topRight: Radius.circular(12.0), // Adjust as needed
+        decoration: BoxDecoration(
+          color: Colors.green.shade200,
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(16.0), // Adjust as needed
+            topRight: Radius.circular(16.0), // Adjust as needed
           ),
         ),
         child: BottomNavigationBar(
@@ -63,7 +63,7 @@ class _Owner_homeState extends State<Owner_home> {
               label: "ประวัติ",
             ),
             BottomNavigationBarItem(
-              icon: FaIcon(FontAwesomeIcons.circleUser),
+              icon: FaIcon(FontAwesomeIcons.solidCircleUser),
               label: "โปรไฟล์",
             ),
           ],
