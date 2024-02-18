@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myproject/Widget/Card_customer_status.dart';
 
 class Status_working extends StatefulWidget {
   const Status_working({super.key});
@@ -8,6 +9,7 @@ class Status_working extends StatefulWidget {
 }
 
 class _Status_workingState extends State<Status_working> {
+  final List test = ["Supakon", "Phubet", "Jenjira", "Kitipat", "Sorawit"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +29,24 @@ class _Status_workingState extends State<Status_working> {
           ),
         ),
       ),
+      body: SafeArea(
+          child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Center(
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView.builder(
+                itemCount: test.length,
+                itemBuilder: (context, index) {
+                  return CardCustomerStatus(
+                      order: index + 1, name: test[index]);
+                },
+              )),
+            ],
+          ),
+        ),
+      )),
     );
   }
 }

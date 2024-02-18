@@ -26,7 +26,6 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
         padding: const EdgeInsets.all(14.0),
         child: GestureDetector(
           onTap: () {
-            print(name);
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
