@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:myproject/Page/Owner/status/Status_update_working.dart';
+import 'package:myproject/Page/Owner/status/Status_update_wait.dart';
 
 class CardCustomerStatus extends StatelessWidget {
   final String name;
@@ -64,7 +64,7 @@ class CardCustomerStatus extends StatelessWidget {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(
                             builder: (context) =>
-                                Status_update_working(name: name),
+                                Status_update_wait(name: name),
                           ));
                         },
                       ),

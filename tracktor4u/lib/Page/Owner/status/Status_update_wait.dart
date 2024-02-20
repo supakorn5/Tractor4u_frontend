@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:myproject/Page/Owner/status/Status_working.dart';
 
-class Status_update_working extends StatefulWidget {
+class Status_update_wait extends StatefulWidget {
   late String name;
-  Status_update_working({Key? key, required this.name}) : super(key: key);
+  Status_update_wait({Key? key, required this.name}) : super(key: key);
 
   @override
-  State<Status_update_working> createState() => _Status_update_workingState();
+  State<Status_update_wait> createState() => _Status_update_workingState();
 }
 
-class _Status_update_workingState extends State<Status_update_working> {
+class _Status_update_workingState extends State<Status_update_wait> {
   late String name;
 
   @override
@@ -85,7 +85,7 @@ class _Status_update_workingState extends State<Status_update_working> {
                   ],
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -102,10 +102,14 @@ class _Status_update_workingState extends State<Status_update_working> {
                     )
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      width: 200,
+                      width: 320,
                       height: 100,
                       decoration: BoxDecoration(
                         color: Colors.green.shade200,
@@ -121,6 +125,9 @@ class _Status_update_workingState extends State<Status_update_working> {
                       child: const Center(
                         child: Column(
                           children: [
+                            SizedBox(
+                              height: 5,
+                            ),
                             Text(
                               "รายละเอียดการค่าจ้าง",
                               style: TextStyle(
@@ -129,7 +136,7 @@ class _Status_update_workingState extends State<Status_update_working> {
                               ),
                             ),
                             SizedBox(
-                              height: 15,
+                              height: 10,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -142,10 +149,10 @@ class _Status_update_workingState extends State<Status_update_working> {
                                   style: TextStyle(fontFamily: "Mali"),
                                 ),
                                 Text(
-                                  "50 ",
+                                  "50",
                                   style: TextStyle(fontFamily: "Mali"),
                                 ),
-                                Text("ไร่",
+                                Text(" ไร่",
                                     style: TextStyle(fontFamily: "Mali")),
                               ],
                             ),
@@ -160,10 +167,10 @@ class _Status_update_workingState extends State<Status_update_working> {
                                   style: TextStyle(fontFamily: "Mali"),
                                 ),
                                 Text(
-                                  "50",
+                                  "500",
                                   style: TextStyle(fontFamily: "Mali"),
                                 ),
-                                Text("บาท",
+                                Text(" บาท",
                                     style: TextStyle(fontFamily: "Mali")),
                               ],
                             ),
@@ -177,11 +184,13 @@ class _Status_update_workingState extends State<Status_update_working> {
                                   "ค่าจ้างรวม : ",
                                   style: TextStyle(fontFamily: "Mali"),
                                 ),
-                                Text(
-                                  "25000",
-                                  style: TextStyle(fontFamily: "Mali"),
+                                Flexible(
+                                  child: Text(
+                                    "25000",
+                                    style: TextStyle(fontFamily: "Mali"),
+                                  ),
                                 ),
-                                Text("บาท",
+                                Text(" บาท",
                                     style: TextStyle(fontFamily: "Mali")),
                               ],
                             ),
@@ -191,19 +200,28 @@ class _Status_update_workingState extends State<Status_update_working> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 180,
+                ),
                 Column(
                   children: [
                     Container(
                       width: 150,
                       height: 30,
                       child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green.shade200,
+                        ),
                         onPressed: () {},
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "เริ่ม",
-                              style: TextStyle(fontFamily: "Mali"),
+                              "เริ่มงาน",
+                              style: TextStyle(
+                                  fontFamily: "Mali",
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
