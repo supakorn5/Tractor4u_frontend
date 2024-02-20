@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:myproject/Page/Owner/status/Status_update_wait.dart';
 
 class CardCustomerStatus extends StatelessWidget {
   final String name;
@@ -13,6 +14,7 @@ class CardCustomerStatus extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Card(
+        color: const Color.fromARGB(255, 197, 241, 244),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -58,7 +60,12 @@ class CardCustomerStatus extends StatelessWidget {
                       IconButton(
                         icon: const FaIcon(FontAwesomeIcons.calendar),
                         onPressed: () {
-                          // Handle onPressed event
+                          print(name);
+                          Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(
+                            builder: (context) =>
+                                Status_update_wait(name: name),
+                          ));
                         },
                       ),
                     ],
