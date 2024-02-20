@@ -78,13 +78,13 @@ flutter:
   fonts:
     - family: Mali
       fonts:
-        - asset: Fonts/Mali-Regular.ttf
+        - asset: Fonts//Mali-Regular.ttf
     - family: Kanit
       fonts:
-        - asset: Fonts/Kanit-Regular.ttf
+        - asset: Fonts//Kanit-Regular.ttf
     - family: Itim
       fonts:
-        - asset: Fonts/Itim-Regular.ttf
+        - asset: Fonts//Itim-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
