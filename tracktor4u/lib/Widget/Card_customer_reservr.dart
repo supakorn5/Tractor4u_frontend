@@ -1,7 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:myproject/Page/Owner/reserve/Customer_information.dart';
+import 'package:myproject/Page/Owner/reserve/Information_Customer_reserve.dart';
 
 class CardCustomerReserve extends StatefulWidget {
   late String name;
@@ -58,11 +58,11 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
                   ),
                   Text(
                     "$name",
-                    style: const TextStyle(fontFamily: "Itim", fontSize: 20),
+                    style: const TextStyle(fontFamily: "Kanit", fontSize: 20),
                   ),
                   const Text(
                     "2.8 ก.ม",
-                    style: TextStyle(fontFamily: "Itim", fontSize: 20),
+                    style: TextStyle(fontFamily: "Kanit", fontSize: 20),
                   ),
                 ],
               ),

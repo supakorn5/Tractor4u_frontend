@@ -50,7 +50,7 @@ class _Status_update_workingState extends State<Status_update_wait> {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -91,7 +91,7 @@ class _Status_update_workingState extends State<Status_update_wait> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const CircleAvatar(
-                      radius: 50,
+                      radius: 40,
                     ),
                     Text(
                       name,

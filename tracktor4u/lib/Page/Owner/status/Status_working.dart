@@ -15,7 +15,7 @@ class _Status_workingState extends State<Status_working> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "รายการลูกค้าที่จองคิว",
+          "รายการการทำงาน",
           style: TextStyle(fontFamily: "Mali", fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
