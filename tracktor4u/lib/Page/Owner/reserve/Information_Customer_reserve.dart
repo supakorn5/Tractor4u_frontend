@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:myproject/Page/Owner/Owner_home.dart';
-import 'package:myproject/Widget/Dialog_workingdate.dart';
+import 'package:myproject/Widget/Dialog_workingdate_count.dart';
 
 class CustomerInformation extends StatefulWidget {
   late String name;
@@ -63,7 +63,7 @@ class _CustomerInformationState extends State<CustomerInformation> {
                 ),
                 Text(
                   name,
-                  style: const TextStyle(fontFamily: "Itim", fontSize: 20),
+                  style: const TextStyle(fontFamily: "Mali", fontSize: 20),
                 ),
                 const SizedBox(
                   height: 20,
