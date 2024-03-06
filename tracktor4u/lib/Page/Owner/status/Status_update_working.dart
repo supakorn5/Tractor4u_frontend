@@ -32,9 +32,7 @@ class _StatusUpdateWorkingState extends State<StatusUpdateWorking> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => const Owner_home(),
-            ));
+            Navigator.pop(context);
           },
           icon: const Icon(
               FontAwesomeIcons.arrowLeft), // Replace with your desired icon

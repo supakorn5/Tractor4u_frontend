@@ -28,9 +28,7 @@ class _InformationPayState extends State<InformationPay> {
         ),
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => const Owner_home(),
-            ));
+            Navigator.pop(context);
           },
           icon: const Icon(
               FontAwesomeIcons.arrowLeft), // Replace with your desired icon

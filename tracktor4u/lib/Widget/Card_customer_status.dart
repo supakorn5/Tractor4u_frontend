@@ -13,7 +13,7 @@ class CardCustomerStatus extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
+        Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => StatusUpdateWorking(name: name),
         ));
       },

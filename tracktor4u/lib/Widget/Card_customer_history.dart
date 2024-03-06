@@ -1,24 +1,16 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
-import 'package:myproject/Page/Owner/reserve/Information_Customer_reserve.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:myproject/Page/Owner/history/intfomation_history.dart';
 
-class CardCustomerReserve extends StatefulWidget {
+class CardCustomerHistory extends StatefulWidget {
   late String name;
-  CardCustomerReserve({Key? key, required this.name}) : super(key: key);
+  CardCustomerHistory({Key? key, required this.name}) : super(key: key);
+
   @override
-  State<CardCustomerReserve> createState() => _CardCustomerReserveState();
+  State<CardCustomerHistory> createState() => _CardCustomerHistoryState();
 }
 
-class _CardCustomerReserveState extends State<CardCustomerReserve> {
-  late String name;
-
-  @override
-  void initState() {
-    super.initState();
-    name = widget.name;
-  }
-
+class _CardCustomerHistoryState extends State<CardCustomerHistory> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -29,8 +21,8 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => CustomerInformation(
-                    name: name,
+                  builder: (context) => InformationHistory(
+                    name: widget.name,
                   ),
                 ));
           },
@@ -57,13 +49,19 @@ class _CardCustomerReserveState extends State<CardCustomerReserve> {
                     radius: 30,
                   ),
                   Text(
-                    "$name",
+                    widget.name,
                     style: const TextStyle(fontFamily: "Kanit", fontSize: 20),
                   ),
-                  const Text(
-                    "2.8 ก.ม",
-                    style: TextStyle(fontFamily: "Kanit", fontSize: 20),
-                  ),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      FaIcon(FontAwesomeIcons.flagCheckered),
+                      Text(
+                        "เสร็จแล้ว",
+                        style: TextStyle(fontFamily: "Mali"),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
