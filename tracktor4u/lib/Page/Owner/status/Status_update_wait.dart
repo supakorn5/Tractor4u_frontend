@@ -25,9 +25,7 @@ class _Status_update_workingState extends State<Status_update_wait> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => const Status_working(),
-            ));
+            Navigator.pop(context);
           },
           icon: const Icon(
               FontAwesomeIcons.arrowLeft), // Replace with your desired icon

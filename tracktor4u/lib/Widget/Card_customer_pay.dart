@@ -18,13 +18,10 @@ class _CardCustomerPayState extends State<CardCustomerPay> {
         padding: const EdgeInsets.all(14.0),
         child: GestureDetector(
           onTap: () {
-            // Navigator.pushReplacement(
-            //     context,
-            //     MaterialPageRoute(
-            //       builder: (context) => CustomerInformation(
-            //         name: name,
-            //       ),
-            //     ));
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => InformationPay(
+                      name: widget.name,
+                    )));
           },
           child: Container(
             width: 300,
@@ -55,23 +52,15 @@ class _CardCustomerPayState extends State<CardCustomerPay> {
                         fontWeight: FontWeight.bold,
                         fontSize: 20),
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => InformationPay(
-                                name: widget.name,
-                              )));
-                    },
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        FaIcon(FontAwesomeIcons.moneyBillWave),
-                        Text(
-                          "รอชำระ",
-                          style: TextStyle(fontFamily: "Itim"),
-                        ),
-                      ],
-                    ),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FaIcon(FontAwesomeIcons.moneyBillWave),
+                      Text(
+                        "รอชำระ",
+                        style: TextStyle(fontFamily: "Itim"),
+                      ),
+                    ],
                   )
                 ],
               ),
